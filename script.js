@@ -112,8 +112,6 @@ $('#song1').on('mousedown', function () {
   }
 });
 
-var song1 = new Audio('dark.mp3');
-
 // Play the song automatically when the modal is opened
 $('#modal-song1').on('show.bs.modal', function () {
   $("#modal-song1 audio").each(function () {
@@ -427,9 +425,16 @@ $("#mail").hover(
 // Dock Effects Ends
 
 // ----------------------------------------------------------------------
- 
+
+
+
+
+
+
+
 // Animation Starts
 
+/*
 // adapted from: https://codepen.io/franksLaboratory/pen/aborBPJ
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d"); // CTX MEANS CONTEXT
@@ -532,6 +537,7 @@ function animate(){
 		particleArray[i].update();
 	}
 }
+
 init();
 animate();
 
@@ -541,8 +547,9 @@ window.addEventListener('resize',
 	function(){
 		canvas.width = innerWidth;
 		canvas.height = innerHeight;
-        mouse.radius = ((canvas.height/80) * (canvas.width/80));
-		init();
+        mouse.radius = ((canvas.height/90) * (canvas.width/90));
+    init();
+    animate();
 	}
 )
 // 2) SET MOUSE POSITION AS UNDEFINED when it leaves canvas//////
@@ -555,3 +562,4 @@ window.addEventListener('mouseout',
 )
 
 // Animation Ends
+*/

@@ -1,11 +1,18 @@
-@import url(http://allfont.net/allfont.css?fonts=lucida-sans-unicode);
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+@font-face {
+  font-family: lucida;
+  src: url(files/lucida-sans-unicode.ttf);
+}
+
+@font-face {
+  font-family: lucida;
+  src: url(files/lucida-sans-unicode.ttf);
+  font-weight: bold;
 }
 
 html, body {
@@ -13,14 +20,15 @@ html, body {
   width: 100%;
   margin: 0;
   overflow: auto;
-  font-family: 'Lucida Sans Unicode', arial;
+  /* font-family: 'Lucida Sans Unicode', arial; */
+  font-family: lucida, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'arial';
 }
 
 /* -------------------------------------------------------------------------------------- */
 
 /* Start Navbar */
 
-.navbar {
+#navbar {
   z-index: 100;
   padding: 0;
   margin: 0;
@@ -62,6 +70,8 @@ html, body {
 
 /* Begin animated background */
 
+/* The element to apply the animation to */
+
 #canvas1 {
   position: absolute;
   /* top: 0; */
@@ -71,6 +81,9 @@ html, body {
   background: radial-gradient(#1d1d1d ,#0a0a0a );
   /* background-color: black; */
   z-index: 0;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 /* -------------------------------------------------------------------------------------- */
