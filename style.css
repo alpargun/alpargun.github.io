@@ -1,19 +1,27 @@
 @import url(http://allfont.net/allfont.css?fonts=lucida-sans-unicode);
 
 
-* {box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow: auto;
-    font-family: 'Lucida Sans Unicode', arial;
-  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+  font-family: 'Lucida Sans Unicode', arial;
+}
+
+/* -------------------------------------------------------------------------------------- */
 
 /* Start Navbar */
 
 .navbar {
+  z-index: 100;
   padding: 0;
   margin: 0;
   height: 5%;
@@ -48,6 +56,25 @@
   margin-left: 20px;
 }
 
+/* End navbar */
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Begin animated background */
+
+#canvas1 {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 88%;
+  background: radial-gradient(#1d1d1d ,#0a0a0a );
+  /* background-color: black; */
+  z-index: 0;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
 /* Begin draggable desktop icons */
 
 .wrap{
@@ -57,6 +84,13 @@
 
 .dragZone {
   height: 99%;
+}
+
+.dragZone .file-name {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 100%;
 }
 
 .pdf, .txt, .folder, .jpg, .mp3 {
@@ -153,17 +187,9 @@
   left: 35%;
 }
 
-
-
-.dragZone .file-name {
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  font-size: 100%;
-}
-
 /* End draggables */
 
+/* -------------------------------------------------------------------------------------- */
 
 /* Start Modal Popups */
 
@@ -186,6 +212,7 @@
 
 /* End Bootstrap Modals */
 
+/* -------------------------------------------------------------------------------------- */
 
 /* Start Footer */
 
@@ -214,6 +241,7 @@
 
 /* End Footer */
 
+/* -------------------------------------------------------------------------------------- */
 
 /* ************************************* */
 /* RESPONSIVITY */
