@@ -104,6 +104,7 @@ html, body {
   text-align: center;
   font-weight: 400;
   font-size: 100%;
+  margin-top: 0.25rem;
 }
 
 .pdf, .txt, .folder, .jpg, .mp3 {
@@ -111,7 +112,7 @@ html, body {
     height: 100px;
     position: absolute;
     z-index: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .pdf img, .txt img, .folder img, .mp3 img, .jpg img:hover {
@@ -257,18 +258,52 @@ html, body {
 /* -------------------------------------------------------------------------------------- */
 
 /* ************************************* */
-/* RESPONSIVITY */
+/* RESPONSIVENESS */
 
-/* Start Responsivity Fix */
+/* Start Responsiveness Fix */
 
-/* Max Width = 991 px */
-@media(max-width: 991px){
+/* Max Width */
+
+/* Max Width = 1920 px */
+@media(max-width: 1920px){
+
+  .pdf, .txt, .folder, .jpg, .mp3 {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 28px;
+  }
+
+  #social img {
+    width: 46px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 
   .dragZone .file-name {
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    font-size: 100%;
+    font-size: 120%;
+    margin-top: 15px;
+  }
+
+}
+
+/* Max Width = 1024 px */
+@media(max-width: 1024px){
+
+  .pdf, .txt, .folder, .jpg, .mp3 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 28px;
+  }
+
+  #social img {
+    width: 36px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .dragZone .file-name {
+    font-size: 90%;
+    margin-top: 15px;
   }
 
 }
@@ -290,9 +325,15 @@ html, body {
   }
 
   .pdf, .txt, .folder, .jpg, .mp3 {
-    width: 75px;
-    height: 75px;
-    margin-bottom: 10px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
+  }
+
+  #social img {
+    width: 34px;
+    margin-left: 9px;
+    margin-right: 9px;
   }
 
 }
@@ -327,27 +368,6 @@ html, body {
  
 }
 
-/* Max Height = 420 px (e.g. Phone sideways) */
-@media(max-height: 420px){
-
-  .pdf, .txt, .folder, .jpg, .mp3 {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 10px;
-  }
-
-  .dragZone .file-name {
-    font-size: 55%;
-    margin-top: 4px;
-  }
-
-  #social img {
-    width: 14px;
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-}
 
 /* Max Width = 500 px (e.g. iPhone SE) */
 @media(max-width: 320px){
@@ -360,13 +380,46 @@ html, body {
     margin-left: 15px;
   }
 
+  .pdf, .txt, .folder, .jpg, .mp3 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .dragZone .file-name {
+    font-size: 50%;
+    margin-top: 4px;
+  }
+
+  #social img {
+    width: 24px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Max Height */
+
+
+/* Max Height = 420 px (e.g. Phone sideways) */
+@media(max-height: 420px){
+
+  .pdf, .txt, .folder, .jpg, .mp3 {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
   .dragZone .file-name {
     font-size: 55%;
     margin-top: 4px;
   }
 
   #social img {
-    width: 24px;
+    width: 14px;
     margin-left: 6px;
     margin-right: 6px;
   }
@@ -381,8 +434,8 @@ html, body {
   }
 
   .pdf, .txt, .folder, .jpg, .mp3 {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
   }
 
@@ -395,6 +448,32 @@ html, body {
     width: 14px;
     margin-left: 6px;
     margin-right: 6px;
+  }
+
+}
+
+/* Min Height = 1200 px (e.g. iPad Pro (12.9") */
+@media(min-height: 1200px){
+
+  .navbar .navbar-text{
+    font-size: 32px;
+  }
+
+  .pdf, .txt, .folder, .jpg, .mp3 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .dragZone .file-name {
+    font-size: 130%;
+    margin-top: 14px;
+  }
+
+  #social img {
+    width: 48px;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 
 }
