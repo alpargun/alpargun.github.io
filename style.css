@@ -264,28 +264,6 @@ html, body {
 
 /* Max Width */
 
-/* Max Width = 1920 px */
-@media(max-width: 1920px){
-
-  .pdf, .txt, .folder, .jpg, .mp3 {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 28px;
-  }
-
-  #social img {
-    width: 46px;
-    margin-left: 18px;
-    margin-right: 18px;
-  }
-
-  .dragZone .file-name {
-    font-size: 120%;
-    margin-top: 15px;
-  }
-
-}
-
 /* Max Width = 1024 px */
 @media(max-width: 1024px){
 
